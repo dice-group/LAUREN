@@ -1,0 +1,16 @@
+target/
+log/
+bin/
+.classpath
+.settings/
+.project
+.metadata
+.DS_Store
+AIDA-YAGO2-dataset.tsv
+*.jar
+*.xml
+*.ttl
+lib/aida.jar
+*.txt
+indexdbpedia*
+index_salsa_kg_sum
