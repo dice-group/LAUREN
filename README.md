@@ -30,5 +30,5 @@ mvn clean install
 cd ..
 java -jar qanary_component-NER-Dandelion/target/qanary_component-NER-Dandelion-X.Y.Z.jar
 ```
-Likewise, run other qanary-QA-componenets such as: qanary_component-NER-stanford, qanary_component-NED-AGDISTIS, qanary_component-QueryBuilder. 
-The qanary-QA pipeline is now ready to be tested. To test the web-UI, check http://localhost:8080/startquestionansweringwithtextquestion.
+Likewise, run other qanary-QA-componenets such as: qanary_component-NER-stanford, qanary_component-NED-AGDISTIS, qanary_component-REL-RELNLIOD, qanary_component-QueryBuilder. 
+The qanary-QA pipeline is now ready to be tested. To test the web-UI, check http://localhost:8282/startquestionansweringwithtextquestion.
