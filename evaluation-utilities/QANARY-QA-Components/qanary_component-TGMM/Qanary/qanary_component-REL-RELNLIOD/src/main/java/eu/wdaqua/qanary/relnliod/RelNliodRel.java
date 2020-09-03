@@ -71,11 +71,12 @@ public class RelNliodRel extends QanaryComponent {
 		QanaryUtils myQanaryUtils = this.getUtils(myQanaryMessage);
 		QanaryQuestion<String> myQanaryQuestion = new QanaryQuestion(myQanaryMessage);
 		String myQuestion = myQanaryQuestion.getTextualRepresentation();
+		logger.info("Question: {}", myQuestion);
 		//String question = URLEncoder.encode(myQuestion, "UTF-8");
 		ArrayList<Selection> selections = new ArrayList<Selection>();
 
 		 try {
-				File f = new File("questions.txt");
+				File f = new File("evaluation-utilities/QANARY-QA-Components/qanary_component-REL-RELNLIOD/questions.txt");
 		    	FileReader fr = new FileReader(f);
 		    	BufferedReader br  = new BufferedReader(fr);
 				int flag = 0;
@@ -110,7 +111,7 @@ public class RelNliodRel extends QanaryComponent {
 				if(flag==0)
 				{
 		
-		
+		logger.debug("sending request to TEXTRAZOR API!!")
 		HttpClient httpclient = HttpClients.createDefault();
 		HttpPost httppost = new HttpPost("http://api.textrazor.com");
 		httppost.setHeader("x-textrazor-key", "4cc373915018a40c921da8243995b9a316a8d2716048acc3b900fb2a");
@@ -143,7 +144,7 @@ public class RelNliodRel extends QanaryComponent {
 				System.out.print("DbLinkListSet: "+dbLinkListSet.toString());
 
 				
-				BufferedWriter buffWriter = new BufferedWriter(new FileWriter("questions.txt", true));
+				BufferedWriter buffWriter = new BufferedWriter(new FileWriter("evaluation-utilities/QANARY-QA-Components/qanary_component-REL-RELNLIOD/questions.txt", true));
 		       
 		        
 		        String MainString = myQuestion + " Answer: "+dbLinkListSet.toString();
@@ -197,7 +198,7 @@ public class RelNliodRel extends QanaryComponent {
 		                 + "BIND (now() as ?time) "
 		                 + "}";
 		         logger.info("Sparql query {}", sparql);
-		         myQanaryUtils.updateTripleStore(sparql);
+		         myQanaryUtils.updateTripleStore(sparql, myQanaryQuestion.getEndpoint().toString());
 		 }
 		
 		return myQanaryMessage;

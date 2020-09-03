@@ -24,7 +24,6 @@ import eu.wdaqua.qanary.commons.QanaryQuestion;
 import eu.wdaqua.qanary.commons.QanaryUtils;
 import eu.wdaqua.qanary.component.QanaryComponent;
 
-@Component
 /**
  * This component connected automatically to the Qanary pipeline. The Qanary
  * pipeline endpoint defined in application.properties (spring.boot.admin.url)
@@ -246,7 +245,8 @@ public class QueryBuilder extends QanaryComponent {
 					+ "	BIND (now() as ?time) . " //
 					+ " BIND (<" + answerID + "> as ?answer) ." //
 					+ "}";
-			myQanaryUtils.updateTripleStore(sparql, myQanaryMessage.getEndpoint().toString());
+			myQanaryUtils.updateTripleStore(sparql, myQanaryQuestion.getEndpoint().toString());
+			logger.debug("query stored in the triplestore");
 
 			Query query = QueryFactory.create(generatedQuery);
 			QueryExecution exec = QueryExecutionFactory.sparqlService(dbpediaSparqEndpoint, query);
@@ -275,7 +275,7 @@ public class QueryBuilder extends QanaryComponent {
 					+ "  BIND (now() as ?time) " //
 					+ "  BIND (<" + answerID + "> as ?answer) ." //
 					+ "}";
-			myQanaryUtils.updateTripleStore(sparql, myQanaryMessage.getEndpoint().toString());
+			myQanaryUtils.updateTripleStore(sparql, myQanaryQuestion.getEndpoint().toString());
 
 		}
 		return myQanaryMessage;

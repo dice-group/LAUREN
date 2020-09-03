@@ -78,7 +78,7 @@ public class RelNliodRel extends QanaryComponent {
 		QanaryQuestion<String> myQanaryQuestion = new QanaryQuestion(myQanaryMessage);
 		String myQuestion = myQanaryQuestion.getTextualRepresentation();
 		try {
-				File f = new File("questions.txt");
+				File f = new File("evaluation-utilities/QANARY-QA-Components/qanary_component-REL-RELNLIOD/questions.txt");
 		    	FileReader fr = new FileReader(f);
 		    	BufferedReader br  = new BufferedReader(fr);
 				int flag = 0;
@@ -116,7 +116,7 @@ public class RelNliodRel extends QanaryComponent {
 		
 		HttpClient httpclient = HttpClients.createDefault();
 		HttpPost httppost = new HttpPost("http://api.textrazor.com");
-		httppost.setHeader("x-textrazor-key", "4cc373915018a40c921da8243995b9a316a8d2716048acc3b900fb2a"); // TODO: move to application.properties
+		httppost.setHeader("x-textrazor-key", "e80f55fe2229219415e413769083342627817054f81c971bc7963dfa"); // TODO: move to application.properties
 		httppost.setHeader("Content-Type", "application/x-www-form-urlencoded");
 		List<NameValuePair> params = new ArrayList<NameValuePair>();
 		params.add(new BasicNameValuePair("text", myQuestion.toLowerCase()));
@@ -193,7 +193,8 @@ public class RelNliodRel extends QanaryComponent {
 		                 + "BIND (now() as ?time) "
 		                 + "}";
 		         logger.info("Sparql query {}", sparql);
-		         myQanaryUtils.updateTripleStore(sparql, myQanaryMessage.getEndpoint().toString());
+		         logger.info("myQanaryQuestion.getEndpoint().toString(): ", myQanaryQuestion.getEndpoint().toString());
+		         myQanaryUtils.updateTripleStore(sparql, myQanaryQuestion.getEndpoint().toString());
 		 }
 		
 		return myQanaryMessage;

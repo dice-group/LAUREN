@@ -85,6 +85,8 @@ public class QanaryUtils {
 	 * @throws SparqlQueryFailed 
 	 */
 	public ResultSet selectFromTripleStore(String sparqlQuery) throws SparqlQueryFailed {
+		logger.info("sparqlQuery: {}", sparqlQuery);
+		logger.info("this.getEndpoint().toString(): {}", this.getEndpoint().toString());
 		return this.selectFromTripleStore(sparqlQuery, this.getEndpoint().toString());
 	}
 
@@ -95,14 +97,16 @@ public class QanaryUtils {
 	 */
 	public ResultSet selectFromTripleStore(String sparqlQuery, String endpoint) throws SparqlQueryFailed {
 		logger.info("selectFromTripleStore: SELECT on {}: {}", endpoint, sparqlQuery);
+		logger.info("sparqlQuery: {}", sparqlQuery);
+		logger.info("this.getEndpoint().toString(): {}", endpoint);
 		ResultSet resultSet;
 
 		try {
 			// use the endpoint which already tested successfully and stored thereafter
-			if (selectTriplestoreEndpointMapper.get(endpoint) != null) {
+			if (endpoint != null) { // selectTriplestoreEndpointMapper.get(endpoint)
 				logger.debug("selectFromTripleStore: execute from tested endpoint: {}", //
-						selectTriplestoreEndpointMapper.get(endpoint));
-				resultSet = selectFromTripleStoreHelper(sparqlQuery, selectTriplestoreEndpointMapper.get(endpoint));
+						endpoint); // selectTriplestoreEndpointMapper.get(endpoint)
+				resultSet = selectFromTripleStoreHelper(sparqlQuery, endpoint); // selectTriplestoreEndpointMapper.get(endpoint)
 			} else {
 				// no working endpoint was stored
 				logger.debug("selectFromTripleStore: execute from untested endpoint: {}", //
@@ -293,6 +297,7 @@ public class QanaryUtils {
 	private static void executeUpdateTripleStore(UpdateProcessor proc, String sparqlQuery, String updateEndpoint)
 			throws SparqlQueryFailed {
 		try {
+			logger.debug(sparqlQuery);
 			proc.execute(); // Execute the update
 		} catch (Exception e) {
 			logger.error("Execution of SPARQL query failed with error: {} \n SPARQL: {} \n Stacktrace {}", //

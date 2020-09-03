@@ -76,7 +76,7 @@ class DbpediaRecorodProperty{
 			
 			//File filename = new File("qanary_qa/qanary_component-REL-RELNLIOD/src/main/resources/dbpedia_3Eng_property.ttl");
 			//File filename = new File("./src/main/resources/dbpedia_3Eng_property.ttl");
-			File filename = new File("src/main/resources/dbpedia_3Eng_property.ttl");
+			File filename = new File("evaluation-utilities/QANARY-QA-Components/qanary_component-REL-RELNLIOD/src/main/resources/all_dbpedia_properties.ttl");
 			System.out.println(filename.getAbsolutePath());
 			PipedRDFIterator<org.apache.jena.graph.Triple> iter = new PipedRDFIterator<>();
 			final PipedRDFStream<org.apache.jena.graph.Triple> inputStream = new PipedTriplesStream(iter);

@@ -204,7 +204,7 @@ public class TextRazorDbSearch {
 	public static void createFilteredWordList() {
 		System.out.println("createFilteredWordList():");
 		try {
-		File filename = new File("src/main/resources/removal_list.txt");
+		File filename = new File("evaluation-utilities/QANARY-QA-Components/qanary_component-REL-RELNLIOD/src/main/resources/removal_list.txt");
 		//File filename1 = new File("qanary_component-REL-RELNLIOD/src/main/resources/removal_list.txt");
 		System.out.println(filename.getPath());
 		System.out.println(filename.getAbsolutePath());
