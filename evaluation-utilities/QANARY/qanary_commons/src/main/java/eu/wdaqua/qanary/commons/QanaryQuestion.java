@@ -538,7 +538,12 @@ public class QanaryQuestion<T> {
 	}
 
 	public String getSparqlResult() throws SparqlQueryFailed {
-		return this.getSparqlResults().get(0).query;
+		List<SparqlAnnotation> result_list = this.getSparqlResults();
+		logger.info("result_list: {}", result_list);
+		if (result_list.size() != 0) {
+			return this.getSparqlResults().get(0).query;
+		}
+		return "";
 	}
 
 	public String getJsonResult() throws SparqlQueryFailed {
@@ -556,6 +561,9 @@ public class QanaryQuestion<T> {
 		String sparqlAnnotation = null;
 		while (resultset.hasNext()) {
 			sparqlAnnotation = resultset.next().get("json").asLiteral().toString();
+		}
+		if (sparqlAnnotation == null) {
+			return "{}";
 		}
 		return sparqlAnnotation.replace("\\\"", "\"");
 	}

@@ -771,7 +771,7 @@
 <http://dbpedia.org/ontology/deputy> <http://www.w3.org/2000/01/rdf-schema#label> "deputy is" .
 <http://dbpedia.org/ontology/deputy> <http://www.w3.org/2000/01/rdf-schema#label> "deputy" .
 <http://dbpedia.org/ontology/deputy> <http://www.w3.org/2000/01/rdf-schema#label> "deputy was" .
-<http://dbpedia.org/ontology/child> <http://www.w3.org/2000/01/rdf-schema#label> "parent" .
+<http://dbpedia.org/ontology/child> <http://www.w3.org/2000/01/rdf-schema#label> "parent" .childre
 <http://dbpedia.org/ontology/restingPlace> <http://www.w3.org/2000/01/rdf-schema#label> "buried in" .
 <http://dbpedia.org/ontology/restingPlace> <http://www.w3.org/2000/01/rdf-schema#label> "resting place" .
 <http://dbpedia.org/ontology/album> <http://www.w3.org/2000/01/rdf-schema#label> "song on" .

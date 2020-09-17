@@ -33,12 +33,7 @@
             
     
     <module>qald-evaluator</module>
-            
-    
-    <module>agdistis</module>
-          
-    
-    <module>qanary_component-nedagdistis</module>
+
       
   </modules>
     

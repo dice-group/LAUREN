@@ -162,16 +162,24 @@ public class QanaryGerbilController {
         JSONObject obj = new JSONObject();
         JSONArray questions = new JSONArray();
         JSONObject item = new JSONObject();
-        JSONObject question = new JSONObject();
-        JSONArray language = new JSONArray();
-        JSONObject sparql = new JSONObject();
-        sparql.put("SPARQL", myQanaryQuestion.getSparqlResult());
-    	language.add(sparql);
-    	question.put("answers", myQanaryQuestion.getJsonResult());
-    	question.put("language", language);
+        JSONArray question = new JSONArray();
+        JSONObject question_obj = new JSONObject();
+        JSONArray answers = new JSONArray();
+        JSONObject sparql_query = new JSONObject();
+        question_obj.put("language", "en");
+        question_obj.put("string", query);
+        question.add(question_obj);
+        sparql_query.put("sparql", myQanaryQuestion.getSparqlResult());
+        logger.info("sparql to put in qald obj: {}", sparql_query);
+    	item.put("query", sparql_query);
+    	answers.add(myQanaryQuestion.getJsonResult());
+    	item.put("answers", answers);
+    	//question.put("language", language);
     	item.put("question", question);
+    	item.put("id", "1");
     	questions.add(item);
     	obj.put("questions", questions);
+    	logger.info("end object: {}", obj);
     	return new ResponseEntity<JSONObject>(obj,HttpStatus.OK);
 	}
 }

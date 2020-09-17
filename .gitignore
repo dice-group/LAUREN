@@ -4,6 +4,10 @@ evaluation-utilities/QANARY-QA-Components/qa.qanary_component-QueryBuilder/targe
 evaluation-utilities/QANARY-QA-Components/qanary_component-NED-AGDISTIS/target/
 evaluation-utilities/QANARY-QA-Components/qanary_component-NER-stanford/target/
 evaluation-utilities/QANARY-QA-Components/qanary_component-REL-RELNLIOD/target/
+evaluation-utilities/QANARY-QA-Components/qanary_component-REL-RelationLinker1/target/
+evaluation-utilities/QANARY/qald-evaluator/target/
+evaluation-utilities/QANARY/qanary_component-archetype/target/
+evaluation-utilities/QANARY/qanary_component-template/target/
 evaluation-utilities/QANARY/qanary_pipeline-template/stored-question__audio_0bec69c1-faff-4c8e-a47a-cfcac69b5abe
 evaluation-utilities/QANARY/qanary_pipeline-template/stored-question__audio_2876d9c3-a6a5-43b4-8e0a-ef080ab0dc51
 evaluation-utilities/QANARY/qanary_pipeline-template/stored-question__audio_3d4a8352-5481-4783-a5ce-5ca6ca74d608
@@ -20,6 +24,7 @@ evaluation-utilities/QANARY/qanary_pipeline-template/stored-question__text_452ca
 evaluation-utilities/QANARY/qanary_pipeline-template/stored-question__text_4aa5e86c-1023-4ff3-a8e4-2052b4e824e2
 evaluation-utilities/QANARY/qanary_pipeline-template/stored-question__text_99b2a52e-67cd-40d2-bc68-f99a9d6df3f3
 evaluation-utilities/QANARY/qanary_pipeline-template/stored-question__text_b7bcbe58-265a-4b87-821e-c3bba3f94253
+evaluation-utilities/QANARY/qanary_pipeline-template/stored-question*
 
 questions.txt
 questions_asked/

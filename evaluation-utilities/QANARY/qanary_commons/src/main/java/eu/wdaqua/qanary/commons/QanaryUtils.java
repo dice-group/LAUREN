@@ -127,6 +127,7 @@ public class QanaryUtils {
 				logger.info("selectFromTripleStore: try SELECT query on {}", endpointForStardogToBeTested);
 				resultSet = selectFromTripleStoreHelper(sparqlQuery, endpointForStardogToBeTested);
 				selectTriplestoreEndpointMapper.put(endpoint, endpointForStardogToBeTested);
+				logger.debug("resultSet fetched: {}");
 				return resultSet;
 			} catch (Exception e2) {
 				// print current exception, but throw the parent's block exception
