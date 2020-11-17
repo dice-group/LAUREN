@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html  xmlns="http://www.w3.org/1999/xhtml"
+    xml:lang="en-US"
+    lang="en-US">
+  <head profile="http://www.w3.org/2005/10/profile">
+    <title>Knowledge Graph - Results</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--===============================================================================================-->	
+    <link rel="apple-touch-icon" sizes="180x180" href="includes/images/icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="includes/images/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="includes/images/icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="Description" content="This page tries to mix charts with html formatting and layout constructs." />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="-l" />
+
+    <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
+    <!-- <script src="includes/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="includes/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="includes/js/drawGraph.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+
+    <style type="text/css">
+      svg {
+        font: 10px sans-serif;
+        display: block;
+      }
+    </style>
+
+
+    <STYLE type="text/css">
+      div.div_Header {
+        width: 100%;
+        border:2px solid White;
+        border-radius:7px;
+        background: WhiteSmoke;
+        font: bold 14px Arial;
+        font-family:Arial, Helvetica, sans-serif;
+        color:WhiteSmoke;
+        text-align:center;
+      }
+      h1.h1_BodyHeader {        text-align:center;
+        font: bold 1.5em Arial;
+      }
+      h2.h2_LeftMenuHeader {
+        text-align:center;
+        font: bold 1.2em Arial;
+      }
+      h3.h3_Body {
+        text-align:center;
+      }
+      p.p_Red {
+        color:Red;
+      }
+      table.table_Header {
+        width: 100%;
+        text-align:center;
+      }
+      td.td_HeaderLeft {
+        text-align:left;
+      }
+      td.td_HeaderRight {
+        text-align:right;
+      }
+      div.div_Menu {
+        width: 100%;
+        border:2px solid White;
+        border-radius:7px;
+        background: MidnightBlue;
+        font: bold 14px Arial;
+        font-family:Arial, Helvetica, sans-serif;
+        color:White;
+        text-align:center;
+      }
+      p.p_Left {
+        font-family:Arial, Helvetica, sans-serif;
+        color:Black;
+        text-align:left;
+        padding-left: 5px;
+        font: normal 14px Arial;
+      }
+      table.table_Body {        width: 100%;
+        height: 100%;
+        padding: 0;
+      }
+      td.td_BodyLeft {
+        vertical-align: top;
+        width: 250px;
+        height: 100%;
+        padding: 0;
+      }
+      td.td_BodyRight {
+        vertical-align: top;
+      }
+      li.li_LeftMenu {
+        text-align:left;
+        font: normal 14px Arial;
+      }
+      a.a_LeftMenuNoUnderLine {
+        text-decoration:  none;
+      }
+      div.div_Body {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        border:2px solid White;
+        border-radius:7px;
+        background: WhiteSmoke;
+        font: bold 14px Arial;
+        font-family:Arial, Helvetica, sans-serif;
+        color:Black;
+        text-align:center;
+      }
+      div.div_Footer {
+        width: 100%;
+        border:2px solid White;
+        border-radius:7px;
+        background: MidnightBlue;
+        font: bold 14px Arial;
+        font-family:Arial, Helvetica, sans-serif;
+        color:White;
+        text-align:center;
+      }
+      
+      div.div_RootBody {
+        position: relative;
+        border:2px solid White;
+        border-radius:7px;
+        background: WhiteSmoke;
+        font: normal 14px Arial;
+        font-family:Arial, Helvetica, sans-serif;
+        color:Black;
+        padding: 0px 1em;
+        text-align:left;
+      }
+
+      .modal a.close-modal[class*="icon-"] {
+          top: -10px;
+          right: -10px;
+          width: 20px;
+          height: 20px;
+          color: #fff;
+          line-height: 1.25;
+          text-align: center;
+          text-decoration: none;
+          text-indent: 0;
+          background: #900;
+          border: 2px solid #fff;
+          -webkit-border-radius:  26px;
+          -moz-border-radius:     26px;
+          -o-border-radius:       26px;
+          -ms-border-radius:      26px;
+          -moz-box-shadow:    1px 1px 5px rgba(0,0,0,0.5);
+          -webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+          box-shadow:         1px 1px 5px rgba(0,0,0,0.5);
+        }
+
+        .blocker{position:fixed;top:0;right:0;bottom:0;left:0;width:100%;height:100%;overflow:auto;z-index:1;padding:20px;box-sizing:border-box;background-color:#000;background-color:rgba(0,0,0,0.75);text-align:center}.blocker:before{content:"";display:inline-block;height:100%;vertical-align:middle;margin-right:-0.05em}.blocker.behind{background-color:transparent}.modal{display:none;vertical-align:middle;position:relative;z-index:2;max-width:500px;box-sizing:border-box;width:90%;background:#fff;padding:15px 30px;-webkit-border-radius:8px;-moz-border-radius:8px;-o-border-radius:8px;-ms-border-radius:8px;border-radius:8px;-webkit-box-shadow:0 0 10px #000;-moz-box-shadow:0 0 10px #000;-o-box-shadow:0 0 10px #000;-ms-box-shadow:0 0 10px #000;box-shadow:0 0 10px #000;text-align:left}.modal a.close-modal{position:absolute;top:-12.5px;right:-12.5px;display:block;width:30px;height:30px;text-indent:-9999px;background-size:contain;background-repeat:no-repeat;background-position:center center;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAA3hJREFUaAXlm8+K00Acx7MiCIJH/yw+gA9g25O49SL4AO3Bp1jw5NvktC+wF88qevK4BU97EmzxUBCEolK/n5gp3W6TTJPfpNPNF37MNsl85/vN/DaTmU6PknC4K+pniqeKJ3k8UnkvDxXJzzy+q/yaxxeVHxW/FNHjgRSeKt4rFoplzaAuHHDBGR2eS9G54reirsmienDCTRt7xwsp+KAoEmt9nLaGitZxrBbPFNaGfPloGw2t4JVamSt8xYW6Dg1oCYo3Yv+rCGViV160oMkcd8SYKnYV1Nb1aEOjCe6L5ZOiLfF120EjWhuBu3YIZt1NQmujnk5F4MgOpURzLfAwOBSTmzp3fpDxuI/pabxpqOoz2r2HLAb0GMbZKlNV5/Hg9XJypguryA7lPF5KMdTZQzHjqxNPhWhzIuAruOl1eNqKEx1tSh5rfbxdw7mOxCq4qS68ZTjKS1YVvilu559vWvFHhh4rZrdyZ69Vmpgdj8fJbDZLJpNJ0uv1cnr/gjrUhQMuI+ANjyuwftQ0bbL6Erp0mM/ny8Fg4M3LtdRxgMtKl3jwmIHVxYXChFy94/Rmpa/pTbNUhstKV+4Rr8lLQ9KlUvJKLyG8yvQ2s9SBy1Jb7jV5a0yapfF6apaZLjLLcWtd4sNrmJUMHyM+1xibTjH82Zh01TNlhsrOhdKTe00uAzZQmN6+KW+sDa/JD2PSVQ873m29yf+1Q9VDzfEYlHi1G5LKBBWZbtEsHbFwb1oYDwr1ZiF/2bnCSg1OBE/pfr9/bWx26UxJL3ONPISOLKUvQza0LZUxSKyjpdTGa/vDEr25rddbMM0Q3O6Lx3rqFvU+x6UrRKQY7tyrZecmD9FODy8uLizTmilwNj0kraNcAJhOp5aGVwsAGD5VmJBrWWbJSgWT9zrzWepQF47RaGSiKfeGx6Szi3gzmX/HHbihwBser4B9UJYpFBNX4R6vTn3VQnez0SymnrHQMsRYGTr1dSk34ljRqS/EMd2pLQ8YBp3a1PLfcqCpo8gtHkZFHKkTX6fs3MY0blKnth66rKCnU0VRGu37ONrQaA4eZDFtWAu2fXj9zjFkxTBOo8F7t926gTp/83Kyzzcy2kZD6xiqxTYnHLRFm3vHiRSwNSjkz3hoIzo8lCKWUlg/YtGs7tObunDAZfpDLbfEI15zsEIY3U/x/gHHc/G1zltnAgAAAABJRU5ErkJggg==')}.modal-spinner{display:none;position:fixed;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);padding:12px 16px;border-radius:5px;background-color:#111;height:20px}.modal-spinner>div{border-radius:100px;background-color:#fff;height:20px;width:2px;margin:0 1px;display:inline-block;-webkit-animation:sk-stretchdelay 1.2s infinite ease-in-out;animation:sk-stretchdelay 1.2s infinite ease-in-out}.modal-spinner .rect2{-webkit-animation-delay:-1.1s;animation-delay:-1.1s}.modal-spinner .rect3{-webkit-animation-delay:-1.0s;animation-delay:-1.0s}.modal-spinner .rect4{-webkit-animation-delay:-0.9s;animation-delay:-0.9s}@-webkit-keyframes sk-stretchdelay{0%,40%,100%{-webkit-transform:scaleY(0.5)}20%{-webkit-transform:scaleY(1.0)}}@keyframes sk-stretchdelay{0%,40%,100%{transform:scaleY(0.5);-webkit-transform:scaleY(0.5)}20%{transform:scaleY(1.0);-webkit-transform:scaleY(1.0)}}
+    </STYLE>
+    <!--[if gt IE 7]>
+      <style>body { overflow-y:scroll; } </style>
+    <![endif]-->
+
+  </head>
+  <body>
+    <table class="table_Body">
+      <tr>
+        <td class="td_BodyRight">
+          <div class="div_RootBody">
+            <h1 style="text-align:center; font: bold 1.5em Arial;">Knowledge Graph Summarization</h1>
+          </div>
+          <div class="div_RootBody" id="chartRoot">
+          <div class="chartBox"></div>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <script type="text/javascript">
+
+        
+      var dataset = {nodes:[],edges:[]};
+      var subjectNodeID;
+      var typeLongHash = [];
+      var nodesRank = [];
+      var sidePanelHeight = 0;
+      var printPredicateCheck = true;
+      var printRankCheck = true;  
+
+      function readJsonData() {
+        $.getJSON("output.json", function(data) {
+            $.each(data, function(subject, typeList) {
+            
+                uriParts = subject.split('/');
+                // inserting subject nodes
+                dataset.nodes.push({
+                    id: subject,
+                    name: uriParts[uriParts.length-1],
+                    fixed:true,
+                    x: 0,
+                    y:0,
+                    type: "Master_Entity",
+                    color: "#"+((1<<24)*Math.random()|0).toString(16)
+                });
+                subjectNodeID = subject;
+                typeLongHash['Master_Entity'] = subject;
+                
+                $.each(typeList, function(predicate, objectList) {
+                    relType = predicate.split('/');
+                    $.each(objectList, function(index, object) {
+                    
+                    // inserting object nodes and their edges
+                    uriParts = object.value.split('/');
+                    // inserting subject nodes
+                    dataset.nodes.push({
+                        id: object.value,
+                        name: uriParts[uriParts.length-1],
+                        rank: nodesRank.indexOf(object.value) + 1,
+                        type: relType[relType.length-1],
+                        color: "#"+((1<<24)*Math.random()|0).toString(16)
+                    });
+                    
+                    typeLongHash[relType[relType.length-1]] = predicate;
+                    
+                    dataset.edges.push({
+                        linkName: relType[relType.length-1],
+                        relType: predicate,
+                        sourceId: subject,
+                        targetId: object.value
+                    });
+                    });
+                });
+            });
+            drawCluster( subjectNodeID, dataset, typeLongHash, nodesRank, "#chartRoot .chartBox", printPredicateCheck, printRankCheck);
+        });
+      }
+      function readEntitiesData() {
+        
+        $.ajax({ 
+            cache: false,
+            url: 'output.json', 
+            dataType: 'json', 
+            async: false, 
+            success: function(data){ 
+              $.each(data, function(subject, typeList) {
+                  
+                  uriParts = subject.split('/');
+                  // inserting subject nodes
+                  dataset.nodes.push({
+                      id: subject,
+                      name: uriParts[uriParts.length-1],
+                      fixed:true,
+                      x: 0,
+                      y:0,
+                      type: "Master_Entity",
+                      color: "#"+((1<<24)*Math.random()|0).toString(16)
+                  });
+                  subjectNodeID = subject;
+                  typeLongHash['Master_Entity'] = subject;
+                  
+                  $.each(typeList, function(predicate, objectList) {
+                      relType = predicate.split('/');
+                      $.each(objectList, function(index, object) {
+                      
+                      // inserting object nodes and their edges
+                      uriParts = object.value.split('/');
+                      // inserting subject nodes
+                      dataset.nodes.push({
+                          id: object.value,
+                          name: uriParts[uriParts.length-1],
+                          rank: nodesRank.findIndex(x => x.node === object.value),
+                          type: relType[relType.length-1],
+                          color: "#"+((1<<24)*Math.random()|0).toString(16)
+                      });
+                      
+                      typeLongHash[relType[relType.length-1]] = predicate;
+                      
+                      dataset.edges.push({
+                          linkName: relType[relType.length-1],
+                          relType: predicate,
+                          sourceId: subject,
+                          targetId: object.value
+                      });
+                      });
+                  });
+              });
+              drawCluster( subjectNodeID, dataset, typeLongHash, nodesRank, "#chartRoot .chartBox");
+            } 
+        });
+      }
+
+      $( document ).ready(function() {  
+        dataset = {nodes:[],edges:[]};
+        subjectNodeID;
+        typeLongHash = [];
+        nodesRank = [];
+        sidePanelHeight = 0;
+        printPredicateCheck = true;
+        printRankCheck = true;      
+        $.ajax({ 
+            cache: false,
+            url: 'output.nt', 
+            dataType: 'text', 
+            async: false, 
+            success: function(data){ 
+              var tempList = data.split("> .\n");
+          
+              for (var i = 0; i < tempList.length -1; i++) {
+
+                
+                nodesRank.push({
+                  node: tempList[i].split("> <")[2],
+                  type: tempList[i].split("> <")[1].split('/').pop()
+                });
+                
+              }
+              readEntitiesData();
+            } 
+        });
+        
+      });
+      
+    </script>
+
+  </body>
+
+</html>
