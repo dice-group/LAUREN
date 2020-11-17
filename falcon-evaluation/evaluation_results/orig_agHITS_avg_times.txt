@@ -1,0 +1,1 @@
+total time for qald8 eval: 98.87635636329651total time for qald9 eval: 389.9115445613861total time for lcquad eval: 11788.486760616302total time for qald8 eval: 11737.207521677017total time for qald8 eval: 81.07165265083313total time for qald9 eval: 536.0863072872162

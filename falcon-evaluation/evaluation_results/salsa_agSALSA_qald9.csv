@@ -1,0 +1,151 @@
+Question,Gold Standard Entities,Gold Standard Relations,FALCON_Entities,P_E,R_E,FALCON_Relations,P_R,R_R
+What is the time zone of Salt Lake City?,['http://dbpedia.org/resource/Salt_Lake_City'],['http://dbpedia.org/ontology/timeZone'],['http://dbpedia.org/resource/Salt_Lake_City'],1.0,1.0,[],0,0.0
+Who killed Caesar?,[],['ct:subjec'],['http://dbpedia.org/resource/Julius_Caesar'],1,1,['http://dbpedia.org/ontology/billed'],0.0,0.0
+What is the highest mountain in Germany?,['http://dbpedia.org/resource/Germany'],[],['http://dbpedia.org/resource/Germany'],1.0,1.0,[],1,1
+Which American presidents were in office during the Vietnam War?,['http://dbpedia.org/resource/Vietnam_War'],"['ct:subjec', 'http://dbpedia.org/ontology/commander']","['http://aksw.org/notInWiki/theVietnamWar', 'http://aksw.org/notInWiki/American']",0.0,0.0,[],0,0.0
+Butch Otter is the governor of which U.S. state?,['http://dbpedia.org/resource/Butch_Otter'],[],"['http://dbpedia.org/resource/Otter', 'http://aksw.org/notInWiki/US']",0.0,0.0,[],1,1
+How many gold medals did Michael Phelps win at the 2008 Olympics?,[],"['http://dbpedia.org/ontology/goldMedalist', 'contain']","['http://dbpedia.org/resource/Michael_Phelps', 'http://dbpedia.org/resource/Olympic_Games', 'http://aksw.org/notInWiki/2008']",1,1,['http://dbpedia.org/ontology/award'],0.0,0.0
+Which artists were born on the same date as Rachel Stevens?,[],"['http://dbpedia.org/ontology/birthDate', 'http://dbpedia.org/ontology/birthDate']",['http://dbpedia.org/resource/Rachel_Stevens'],1,1,['http://dbpedia.org/ontology/birthYear'],0.0,0.0
+What is the profession of Frank Herbert?,['http://dbpedia.org/resource/Frank_Herbert'],['bpedia2:occupatio'],['http://dbpedia.org/resource/Frank_Herbert'],1.0,1.0,[],0,0.0
+Are Taiko some kind of Japanese musical instrument?,['http://dbpedia.org/resource/Taiko'],[],['http://aksw.org/notInWiki/Japanese'],0.0,0.0,[],1,1
+How many seats does the home stadium of FC Porto have?,[],"['http://dbpedia.org/ontology/ground', 'http://dbpedia.org/ontology/capacity', 'http://dbpedia.org/property/capacity']",['http://dbpedia.org/resource/FC_Porto'],1,1,[],0,0.0
+Which frequent flyer program has the most airlines?,[],['http://dbpedia.org/property/frequentFlyer'],[],1,1,[],0,0.0
+Which European countries have a constitutional monarchy?,[],['ct:subjec'],['http://aksw.org/notInWiki/European'],1,1,[],0,0.0
+Which countries have places with more than two caves?,[],[],['http://dbpedia.org/resource/More_Than_Two'],1,1,[],1,1
+"Which airports are located in California, USA?","['http://dbpedia.org/resource/California', 'http://dbpedia.org/resource/California', 'http://dbpedia.org/resource/California', 'http://dbpedia.org/resource/California']",['http://dbpedia.org/ontology/isPartOf'],"['http://dbpedia.org/resource/California', 'http://dbpedia.org/resource/United_States']",0.5,0.25,['http://dbpedia.org/ontology/locatedInArea'],0.0,0.0
+What are the nicknames of San Francisco?,['http://dbpedia.org/resource/San_Francisco'],['oaf:nic'],['http://dbpedia.org/resource/San_Francisco'],1.0,1.0,[],0,0.0
+What is Angela Merkel’s birth name?,['http://dbpedia.org/resource/Angela_Merkel'],['http://dbpedia.org/property/birthName'],['http://dbpedia.org/resource/Angela_Merkel'],1.0,1.0,[],0,0.0
+Who is the mayor of Berlin?,['http://dbpedia.org/resource/Berlin'],['http://dbpedia.org/property/leader'],['http://dbpedia.org/resource/Berlin'],1.0,1.0,[],0,0.0
+Which countries in the European Union adopted the Euro?,['http://dbpedia.org/resource/Euro'],[],['http://aksw.org/notInWiki/theEuropeanUnion'],0.0,0.0,[],1,1
+Which software has been published by Mean Hamster Software?,['http://dbpedia.org/resource/Mean_Hamster_Software'],[],['http://dbpedia.org/resource/Mean_Hamster_Software'],1.0,1.0,['http://dbpedia.org/ontology/author'],1,1
+Which country was Bill Gates born in?,[],"['http://dbpedia.org/ontology/birthPlace', 'http://dbpedia.org/ontology/country', 'http://dbpedia.org/ontology/isPartOf', 'http://dbpedia.org/ontology/country']",['http://dbpedia.org/resource/Bill_Gates'],1,1,['http://dbpedia.org/ontology/birthYear'],0.0,0.0
+How many grand-children did Jacques Cousteau have?,['http://dbpedia.org/resource/Jacques_Cousteau'],"['http://dbpedia.org/ontology/child', 'http://dbpedia.org/ontology/child']",['http://dbpedia.org/resource/Jacques_Cousteau'],1.0,1.0,[],0,0.0
+Give me all professional skateboarders from Sweden.,[],"['http://dbpedia.org/ontology/occupation', 'http://dbpedia.org/ontology/country']",['http://dbpedia.org/resource/Sweden'],1,1,[],0,0.0
+Which monarchs of the United Kingdom were married to a German?,['http://dbpedia.org/resource/Germany'],['http://dbpedia.org/ontology/birthPlace'],"['http://aksw.org/notInWiki/theUnitedKingdom', 'http://aksw.org/notInWiki/German']",0.0,0.0,['http://dbpedia.org/ontology/spouse'],0.0,0.0
+Give me all Argentine films.,['http://dbpedia.org/resource/Argentina'],[],['http://dbpedia.org/resource/Argentines'],0.0,0.0,[],1,1
+How did Michael Jackson die?,['http://dbpedia.org/resource/Michael_Jackson'],['http://dbpedia.org/property/deathCause'],['http://dbpedia.org/resource/Michael_Jackson'],1.0,1.0,['http://dbpedia.org/ontology/deathDate'],0.0,0.0
+Which U.S. state has been admitted latest?,[],['ct:subjec'],['http://aksw.org/notInWiki/US'],1,1,['http://dbpedia.org/property/known'],0.0,0.0
+Which classes does the Millepede belong to?,['http://dbpedia.org/resource/Millipede'],['http://dbpedia.org/property/taxon'],['http://dbpedia.org/resource/Millipede'],1.0,1.0,['http://dbpedia.org/ontology/date'],0.0,0.0
+Give me the homepage of Forbes.,['http://dbpedia.org/resource/Forbes'],['oaf:homepag'],['http://dbpedia.org/resource/Forbes'],1.0,1.0,[],0,0.0
+Who is the husband of Amanda Palmer?,['http://dbpedia.org/resource/Amanda_Palmer'],['http://dbpedia.org/ontology/spouse'],['http://dbpedia.org/resource/Amanda_Palmer'],1.0,1.0,[],0,0.0
+Who painted The Storm on the Sea of Galilee?,['http://dbpedia.org/resource/The_Storm_on_the_Sea_of_Galilee'],['http://dbpedia.org/ontology/author'],['http://aksw.org/notInWiki/theSeaofGalilee'],0.0,0.0,['http://dbpedia.org/ontology/creator'],0.0,0.0
+What is the highest place of Karakoram?,['http://dbpedia.org/resource/Karakoram'],['http://dbpedia.org/property/highest'],['http://dbpedia.org/resource/Karakoram'],1.0,1.0,[],0,0.0
+When did Finland join the EU?,['http://dbpedia.org/resource/Finland'],['http://dbpedia.org/property/accessioneudate'],"['http://dbpedia.org/resource/Finland', 'http://dbpedia.org/resource/.eu']",0.5,1.0,['http://dbpedia.org/ontology/date'],0.0,0.0
+Which actors play in Big Bang Theory?,['http://dbpedia.org/resource/The_Big_Bang_Theory'],['http://dbpedia.org/ontology/starring'],['http://dbpedia.org/resource/Big_Bang'],0.0,0.0,['http://dbpedia.org/ontology/starring'],1.0,1.0
+Which computer scientist won an oscar?,"['http://dbpedia.org/resource/Computer_science', 'http://dbpedia.org/resource/Academy_Award']",['http://dbpedia.org/ontology/field'],[],0,0.0,['http://dbpedia.org/ontology/award'],0.0,0.0
+Who wrote Harry Potter?,['http://dbpedia.org/resource/Harry_Potter'],['http://dbpedia.org/property/author'],['http://dbpedia.org/resource/Harry_Potter'],1.0,1.0,['http://dbpedia.org/ontology/composer'],0.0,0.0
+Give me all writers that won the Nobel Prize in literature.,['http://dbpedia.org/resource/Nobel_Prize_in_Literature'],[],['http://aksw.org/notInWiki/theNobelPrize'],0.0,0.0,['http://dbpedia.org/ontology/award'],1,1
+Give me English actors starring in Lovesick.,"['http://dbpedia.org/resource/Lovesick_(1983_film)', 'http://dbpedia.org/resource/United_Kingdom']","['http://dbpedia.org/ontology/starring', 'http://dbpedia.org/ontology/birthPlace', 'http://dbpedia.org/ontology/country']","['http://aksw.org/notInWiki/Lovesick', 'http://aksw.org/notInWiki/English']",0.0,0.0,['http://dbpedia.org/ontology/starring'],1.0,0.3333333333333333
+What is the nick name of Baghdad?,[],['oaf:nic'],['http://dbpedia.org/resource/Baghdad'],1,1,[],0,0.0
+In which city was the president of Montenegro born?,[],"['http://dbpedia.org/property/title', 'http://dbpedia.org/ontology/type']",['http://dbpedia.org/resource/Montenegro'],1,1,['http://dbpedia.org/ontology/birthPlace'],0.0,0.0
+Which U.S. state has the highest population density?,['http://dbpedia.org/resource/United_States'],"['http://dbpedia.org/ontology/country', 'http://dbpedia.org/ontology/capital', 'http://dbpedia.org/property/densityrank']",['http://aksw.org/notInWiki/US'],0.0,0.0,[],0,0.0
+What is the longest river in China?,['http://dbpedia.org/resource/China'],[],['http://dbpedia.org/resource/China'],1.0,1.0,[],1,1
+What is the area code of Berlin?,['http://dbpedia.org/resource/Berlin'],['http://dbpedia.org/ontology/areaCode'],['http://dbpedia.org/resource/Berlin'],1.0,1.0,[],0,0.0
+How many scientists graduated from an Ivy League university?,['http://dbpedia.org/resource/Ivy_League'],['http://dbpedia.org/ontology/affiliation'],['http://dbpedia.org/resource/Ivy_League'],1.0,1.0,['http://dbpedia.org/ontology/effectiveRadiatedPower'],0.0,0.0
+Which professional surfers were born in Australia?,"['http://dbpedia.org/resource/Surfer', 'http://dbpedia.org/resource/Australia', 'http://dbpedia.org/resource/Surfer', 'http://dbpedia.org/resource/Australia']","['http://dbpedia.org/ontology/occupation', 'http://dbpedia.org/ontology/country']",['http://dbpedia.org/resource/Australia'],1.0,0.25,['http://dbpedia.org/ontology/birthPlace'],0.0,0.0
+Give me all Dutch parties.,['http://dbpedia.org/resource/Netherlands'],[],['http://aksw.org/notInWiki/Dutch'],0.0,0.0,[],1,1
+How many moons does Mars have?,['http://dbpedia.org/resource/Mars'],['http://dbpedia.org/property/satellites'],['http://dbpedia.org/resource/Mars'],1.0,1.0,[],0,0.0
+What is Batman's real name?,['http://dbpedia.org/resource/Batman'],[],['http://dbpedia.org/resource/Batman'],1.0,1.0,[],1,1
+What is Elon Musk famous for?,['http://dbpedia.org/resource/Elon_Musk'],['http://dbpedia.org/ontology/knownFor'],['http://dbpedia.org/resource/Elon_Musk'],1.0,1.0,[],0,0.0
+Who is the author of WikiLeaks?,['http://dbpedia.org/resource/WikiLeaks'],['nto:autho'],['http://dbpedia.org/resource/WikiLeaks'],1.0,1.0,[],0,0.0
+Sean Parnell was the governor of which U.S. state?,['http://dbpedia.org/resource/Sean_Parnell'],['http://dbpedia.org/ontology/region'],"['http://aksw.org/notInWiki/seanParnell', 'http://aksw.org/notInWiki/US']",0.0,0.0,[],0,0.0
+How many years was the Ford Model T manufactured?,['http://dbpedia.org/resource/Ford_Model_T'],['http://dbpedia.org/ontology/productionEndYear'],['http://aksw.org/notInWiki/theFordModelT'],0.0,0.0,['http://dbpedia.org/ontology/product'],0.0,0.0
+When was Carlo Giuliani shot?,['http://dbpedia.org/resource/Death_of_Carlo_Giuliani'],['http://dbpedia.org/ontology/deathDate'],['http://dbpedia.org/resource/Death_of_Carlo_Giuliani'],1.0,1.0,['http://dbpedia.org/ontology/date'],0.0,0.0
+Give me all animals that are extinct.,[],[],[],1,1,[],1,1
+Who was the wife of President Lincoln?,[],['nto:spous'],['http://aksw.org/notInWiki/Lincoln'],1,1,[],0,0.0
+How many awards has Bertrand Russell?,[],['http://dbpedia.org/property/awards'],['http://dbpedia.org/resource/Bertrand_Russell'],1,1,[],0,0.0
+Is Pamela Anderson a vegan?,[],[],['http://dbpedia.org/resource/Pamela_Anderson'],1,1,[],1,1
+Which space probes were sent into orbit around the sun?,[],[],[],1,1,[],1,1
+Which German cities have more than 250000 inhabitants?,['http://dbpedia.org/resource/Germany'],[],"['http://aksw.org/notInWiki/morethan250000', 'http://aksw.org/notInWiki/German']",0.0,0.0,[],1,1
+Who is the daughter of Robert Kennedy married to?,['http://dbpedia.org/resource/Robert_F._Kennedy'],"['http://dbpedia.org/ontology/child', 'http://dbpedia.org/ontology/spouse']",['http://dbpedia.org/resource/Robert_F._Kennedy'],1.0,1.0,['http://dbpedia.org/ontology/spouse'],1.0,0.5
+How many students does the Free University of Amsterdam have?,[],['http://dbpedia.org/ontology/numberOfStudents'],['http://aksw.org/notInWiki/theFreeUniversityofAmsterdam'],1,1,[],0,0.0
+What is the revenue of IBM?,['http://dbpedia.org/resource/IBM'],['nto:revenu'],['http://aksw.org/notInWiki/IBM'],0.0,0.0,[],0,0.0
+How many James Bond movies do exist?,['http://dbpedia.org/resource/Category:James_Bond_films'],['ct:subjec'],['http://dbpedia.org/resource/James_Bond'],0.0,0.0,['http://dbpedia.org/property/live'],0.0,0.0
+Who does the voice of Bart Simpson?,['http://dbpedia.org/resource/Bart_Simpson'],['http://dbpedia.org/property/voiceactor'],['http://dbpedia.org/resource/Bart_Simpson'],1.0,1.0,[],0,0.0
+Who was Tom Hanks married to?,[],['http://dbpedia.org/ontology/spouse'],['http://aksw.org/notInWiki/ity>T'],1,1,['http://dbpedia.org/ontology/spouse'],1.0,1.0
+Through which countries does the Yenisei river flow?,['http://dbpedia.org/resource/Yenisei_River'],['http://dbpedia.org/ontology/country'],['http://aksw.org/notInWiki/theYeniseiriver'],0.0,0.0,[],0,0.0
+Give me all cars that are produced in Germany.,"['http://dbpedia.org/resource/Germany', 'http://dbpedia.org/resource/Germany', 'http://dbpedia.org/resource/Germany', 'http://dbpedia.org/resource/Germany']",[],['http://dbpedia.org/resource/Germany'],1.0,0.25,['http://dbpedia.org/ontology/wineProduced'],1,1
+When did Michael Jackson die?,['http://dbpedia.org/resource/Michael_Jackson'],['http://dbpedia.org/ontology/deathDate'],['http://dbpedia.org/resource/Michael_Jackson'],1.0,1.0,['http://dbpedia.org/ontology/deathDate'],1.0,1.0
+What is the highest volcano in Africa?,[],"['ct:subjec', 'http://dbpedia.org/ontology/elevation']",['http://dbpedia.org/resource/Africa'],1,1,[],0,0.0
+Which poet wrote the most books?,['http://dbpedia.org/resource/Poet'],"['http://dbpedia.org/ontology/occupation', 'http://dbpedia.org/ontology/author']",[],0,0.0,['http://dbpedia.org/ontology/composer'],0.0,0.0
+Give me all gangsters from the prohibition era.,[],['http://dbpedia.org/ontology/occupation'],[],1,1,[],0,0.0
+Give me all spacecrafts that flew to Mars.,[],[],['http://dbpedia.org/resource/Mars'],1,1,['http://dbpedia.org/ontology/time'],1,1
+Show me all Czech movies.,['http://dbpedia.org/resource/Czech_Republic'],[],['http://aksw.org/notInWiki/Czech'],0.0,0.0,[],1,1
+Give me all taikonauts.,"[""http://dbpedia.org/resource/People's_Republic_of_China"", 'http://dbpedia.org/resource/China']",[],[],0,0.0,[],1,1
+Which countries have more than ten volcanoes?,[],[],['http://aksw.org/notInWiki/morethanten'],1,1,[],1,1
+Give me all movies with Tom Cruise.,"['http://dbpedia.org/resource/Tom_Cruise', 'http://dbpedia.org/resource/Tom_Cruise']",[],['http://dbpedia.org/resource/Tom_Cruise'],1.0,0.5,[],1,1
+When did Dracula's creator die?,['http://dbpedia.org/resource/Count_Dracula'],"['http://dbpedia.org/ontology/creator', 'http://dbpedia.org/ontology/deathDate']",['http://dbpedia.org/resource/Dracula'],0.0,0.0,['http://dbpedia.org/ontology/deathDate'],1.0,0.5
+Who created English Wikipedia?,['http://dbpedia.org/resource/Wikipedia'],['nto:autho'],['http://aksw.org/notInWiki/English'],0.0,0.0,['http://dbpedia.org/ontology/creator'],0.0,0.0
+Give me all female German chancellors.,['http://dbpedia.org/resource/Chancellor_of_Germany'],['http://dbpedia.org/property/incumbent'],['http://aksw.org/notInWiki/German'],0.0,0.0,[],0,0.0
+Who owns Aldi?,['http://dbpedia.org/resource/Aldi'],['http://dbpedia.org/property/founders'],['http://dbpedia.org/resource/Aldi'],1.0,1.0,['http://dbpedia.org/ontology/languageFamily'],0.0,0.0
+Which books were written by Danielle Steel?,['http://dbpedia.org/resource/Danielle_Steel'],[],['http://dbpedia.org/resource/Danielle_Steel'],1.0,1.0,['http://dbpedia.org/ontology/fate'],1,1
+Who was influenced by Socrates?,['http://dbpedia.org/resource/Socrates'],['http://dbpedia.org/ontology/influencedBy'],['http://dbpedia.org/resource/Socrates'],1.0,1.0,['http://dbpedia.org/ontology/influenced'],0.0,0.0
+How deep is Lake Chiemsee?,['http://dbpedia.org/resource/Chiemsee'],['http://dbpedia.org/ontology/maximumDepth'],['http://dbpedia.org/resource/Chiemsee'],1.0,1.0,[],0,0.0
+Which companies work in the aerospace industry as well as in medicine?,[],[],[],1,1,['http://dbpedia.org/ontology/volume'],1,1
+Which professional surfers were born on the Philippines?,['http://dbpedia.org/resource/Philippines'],['http://dbpedia.org/ontology/occupation'],['http://dbpedia.org/resource/Philippines'],1.0,1.0,['http://dbpedia.org/ontology/birthPlace'],0.0,0.0
+Who were the parents of Queen Victoria?,['http://dbpedia.org/resource/Queen_Victoria'],['http://dbpedia.org/ontology/parent'],['http://dbpedia.org/resource/Queen_Victoria'],1.0,1.0,[],0,0.0
+Are there any castles in the United States?,[],['ct:subjec'],['http://aksw.org/notInWiki/theUnitedStates'],1,1,[],0,0.0
+Which languages are spoken in Estonia?,['http://dbpedia.org/resource/Estonia'],['http://dbpedia.org/ontology/spokenIn'],['http://dbpedia.org/resource/Estonia'],1.0,1.0,['http://dbpedia.org/ontology/spokenIn'],1.0,1.0
+Give me a list of all critically endangered birds.,[],[],[],1,1,['http://dbpedia.org/ontology/name'],1,1
+Which countries are connected by the Rhine?,['http://dbpedia.org/resource/Rhine'],['http://dbpedia.org/ontology/country'],['http://dbpedia.org/resource/Rhine'],1.0,1.0,['http://dbpedia.org/ontology/related'],0.0,0.0
+Who was the father of Queen Elizabeth II?,['http://dbpedia.org/resource/Elizabeth_II'],"['http://dbpedia.org/ontology/parent', 'http://xmlns.com/foaf/0.1/gender']",['http://dbpedia.org/resource/Elizabeth_II'],1.0,1.0,[],0,0.0
+Give me all chemical elements.,[],[],[],1,1,[],1,1
+Give me all American presidents of the last 20 years.,[],[],"['http://aksw.org/notInWiki/thelast20years', 'http://aksw.org/notInWiki/American']",1,1,[],1,1
+When is the movie Worst Case Scenario going to be in cinemas in the Netherlands?,['http://dbpedia.org/resource/Worst_Case_Scenario_(film)'],[],"['http://dbpedia.org/resource/Worst-case_scenario', 'http://dbpedia.org/resource/Netherlands']",0.0,0.0,['http://dbpedia.org/ontology/date'],1,1
+Whom did Lance Bass marry?,"['http://dbpedia.org/resource/Lance_Bass', 'http://dbpedia.org/resource/Lance_Bass']",['http://dbpedia.org/ontology/spouse'],['http://dbpedia.org/resource/Lance_Bass'],1.0,0.5,['http://dbpedia.org/ontology/spouse'],1.0,1.0
+Which subsidiary of TUI Travel serves both Glasgow and Dublin?,"['http://dbpedia.org/resource/TUI_Travel', 'http://dbpedia.org/resource/Glasgow_International_Airport', 'http://dbpedia.org/resource/Dublin_Airport']","['http://dbpedia.org/ontology/subsidiary', 'http://dbpedia.org/ontology/targetAirport']","['http://dbpedia.org/resource/TUI_Travel', 'http://dbpedia.org/resource/Glasgow', 'http://dbpedia.org/resource/Dublin']",0.3333333333333333,0.3333333333333333,['http://dbpedia.org/ontology/series'],0.0,0.0
+What languages are spoken in Pakistan?,['http://dbpedia.org/resource/Pakistan'],['http://dbpedia.org/ontology/language'],['http://dbpedia.org/resource/Pakistan'],1.0,1.0,['http://dbpedia.org/ontology/spokenIn'],0.0,0.0
+Who is the daughter of Bill Clinton married to?,[],"['http://dbpedia.org/ontology/child', 'http://dbpedia.org/ontology/spouse']",['http://dbpedia.org/resource/Bill_Clinton'],1,1,['http://dbpedia.org/ontology/spouse'],1.0,0.5
+Who was on the Apollo 11 mission?,['http://dbpedia.org/resource/Apollo_11'],['http://dbpedia.org/property/crewMembers'],['http://dbpedia.org/resource/Apollo_11'],1.0,1.0,[],0,0.0
+What is the wavelength of Indigo?,[],['http://dbpedia.org/ontology/wavelength'],['http://dbpedia.org/resource/Indian_Initiative_in_Gravitational-wave_Observations'],1,1,[],0,0.0
+Give me all B-sides of the Ramones.,['http://dbpedia.org/resource/Ramones'],['http://dbpedia.org/ontology/musicalArtist'],['http://dbpedia.org/resource/Ramones'],1.0,1.0,[],0,0.0
+Who was called Scarface?,[],[],['http://aksw.org/notInWiki/Scarface'],1,1,[],1,1
+Which rivers flow into the North Sea?,['http://dbpedia.org/resource/North_Sea'],[],['http://aksw.org/notInWiki/theNorthSea'],0.0,0.0,['http://dbpedia.org/ontology/time'],1,1
+Where is Fort Knox located?,['http://dbpedia.org/resource/Fort_Knox'],['http://dbpedia.org/ontology/location'],['http://dbpedia.org/resource/Fort_Knox'],1.0,1.0,['http://dbpedia.org/ontology/locatedInArea'],0.0,0.0
+Which daughters of British earls died at the same place they were born at?,[],[],['http://aksw.org/notInWiki/British'],1,1,"['http://dbpedia.org/ontology/house', 'http://dbpedia.org/ontology/birthYear']",1,1
+How many emperors did China have?,['http://dbpedia.org/resource/Emperor_of_China'],['http://dbpedia.org/property/title'],['http://dbpedia.org/resource/China'],0.0,0.0,[],0,0.0
+What are the names of the Teenage Mutant Ninja Turtles?,['http://dbpedia.org/resource/Teenage_Mutant_Ninja_Turtles'],"['http://dbpedia.org/property/members', 'oaf:givenNam']",[],0,0.0,[],0,0.0
+Where does Piccadilly start?,['http://dbpedia.org/resource/Piccadilly'],['http://dbpedia.org/ontology/routeStart'],['http://dbpedia.org/resource/Piccadilly'],1.0,1.0,['http://dbpedia.org/ontology/source'],0.0,0.0
+What is the name of the university where Obama's wife studied?,['http://dbpedia.org/resource/Barack_Obama'],"['http://dbpedia.org/ontology/spouse', 'http://dbpedia.org/ontology/almaMater']",['http://dbpedia.org/resource/Barack_Obama'],1.0,1.0,['http://dbpedia.org/ontology/course'],0.0,0.0
+When did Paraguay proclaim its independence?,['http://dbpedia.org/resource/Paraguay'],['http://dbpedia.org/ontology/foundingDate'],['http://dbpedia.org/resource/Paraguay'],1.0,1.0,['http://dbpedia.org/ontology/state'],0.0,0.0
+How short is the shortest active NBA player?,['http://dbpedia.org/resource/National_Basketball_Association'],[],['http://dbpedia.org/resource/National_Basketball_Association'],1.0,1.0,[],1,1
+Where did Abraham Lincoln die?,['http://dbpedia.org/resource/Abraham_Lincoln'],['http://dbpedia.org/ontology/deathPlace'],['http://dbpedia.org/resource/Abraham_Lincoln'],1.0,1.0,['http://dbpedia.org/ontology/deathDate'],0.0,0.0
+When was Jack Wolfskin founded?,['http://dbpedia.org/resource/Jack_Wolfskin'],['http://dbpedia.org/ontology/foundingYear'],['http://dbpedia.org/resource/Jack_Wolfskin'],1.0,1.0,['http://dbpedia.org/ontology/foundingYear'],1.0,1.0
+In which city is the headquarter of Air China?,['http://dbpedia.org/resource/Air_China'],['http://dbpedia.org/ontology/headquarter'],['http://dbpedia.org/resource/Air_China'],1.0,1.0,[],0,0.0
+What is the founding year of the brewery that produces Pilsner Urquell?,['http://dbpedia.org/resource/Pilsner_Urquell'],"['http://dbpedia.org/property/brewery', 'http://dbpedia.org/ontology/foundingYear']",['http://dbpedia.org/resource/Pilsner_Urquell'],1.0,1.0,['http://dbpedia.org/ontology/producer'],0.0,0.0
+When did the Boston Tea Party take place?,['http://dbpedia.org/resource/Boston_Tea_Party'],['http://dbpedia.org/property/date'],['http://aksw.org/notInWiki/theBostonTeaParty'],0.0,0.0,['http://dbpedia.org/ontology/date'],1.0,1.0
+Which animals are critically endangered?,[],[],[],1,1,['http://dbpedia.org/ontology/name'],1,1
+Which politicians were married to a German?,"['http://dbpedia.org/resource/Germany', 'http://dbpedia.org/resource/Germany']",['http://dbpedia.org/ontology/country'],['http://aksw.org/notInWiki/German'],0.0,0.0,['http://dbpedia.org/ontology/spouse'],0.0,0.0
+How big is the earth's diameter?,['http://dbpedia.org/resource/Earth'],['http://dbpedia.org/ontology/meanRadius'],[],0,0.0,[],0,0.0
+Is the wife of President Obama called Michelle?,['http://dbpedia.org/resource/Barack_Obama'],['nto:spous'],"['http://aksw.org/notInWiki/Michelle', 'http://dbpedia.org/resource/Barack_Obama']",0.5,1.0,[],0,0.0
+Which U.S. state has the abbreviation MN?,[],[],['http://aksw.org/notInWiki/US'],1,1,[],1,1
+When did Muhammad die?,['http://dbpedia.org/resource/Muhammad'],['http://dbpedia.org/ontology/deathDate'],['http://dbpedia.org/resource/Muhammad'],1.0,1.0,['http://dbpedia.org/ontology/deathDate'],1.0,1.0
+What is the atmosphere of the Moon composed of?,['http://dbpedia.org/resource/Moon'],['http://dbpedia.org/property/atmosphereComposition'],['http://dbpedia.org/resource/Moon_(visual_novel)'],0.0,0.0,['http://dbpedia.org/ontology/musicComposer'],0.0,0.0
+Who is the governor of Texas?,['http://dbpedia.org/resource/Texas'],['http://dbpedia.org/property/governor'],['http://dbpedia.org/resource/Texas'],1.0,1.0,[],0,0.0
+Which movies did Kurosawa direct?,['http://dbpedia.org/resource/Akira_Kurosawa'],[],['http://dbpedia.org/resource/Akira_Kurosawa'],1.0,1.0,['http://dbpedia.org/ontology/channel'],1,1
+What was the name of the famous battle in 1836 in San Antonio?,[],[],"['http://dbpedia.org/resource/Frédéric_Dard', 'http://aksw.org/notInWiki/1836']",1,1,[],1,1
+Give me the official websites of actors of the television show Charmed.,['http://dbpedia.org/resource/Charmed'],"['nto:starrin', 'oaf:homepag']",['http://dbpedia.org/resource/Charmed'],1.0,1.0,['http://dbpedia.org/ontology/derivative'],0.0,0.0
+How many calories does a baguette have?,['http://dbpedia.org/resource/Baguette'],['http://dbpedia.org/property/calories'],[],0,0.0,[],0,0.0
+Give me all libraries established before 1400.,[],[],['http://aksw.org/notInWiki/1400'],1,1,['http://dbpedia.org/ontology/established'],1,1
+Give me all Frisian islands that belong to the Netherlands.,['http://dbpedia.org/resource/Netherlands'],[],"['http://dbpedia.org/resource/Netherlands', 'http://aksw.org/notInWiki/Frisian']",0.5,1.0,['http://dbpedia.org/ontology/date'],1,1
+Which museum exhibits The Scream by Munch?,['http://dbpedia.org/resource/The_Scream'],['http://dbpedia.org/ontology/museum'],['http://aksw.org/notInWiki/Munch'],0.0,0.0,['http://dbpedia.org/ontology/show'],0.0,0.0
+When was the De Beers company founded?,['http://dbpedia.org/resource/De_Beers'],['http://dbpedia.org/ontology/foundingYear'],['http://aksw.org/notInWiki/theDeBeerscompany'],0.0,0.0,['http://dbpedia.org/ontology/foundationPlace'],0.0,0.0
+Who became president after JFK died?,['http://dbpedia.org/resource/John_F._Kennedy'],"['http://dbpedia.org/property/presidentEnd', 'http://dbpedia.org/property/presidentStart']",['http://dbpedia.org/resource/John_F._Kennedy'],1.0,1.0,['http://dbpedia.org/ontology/deathDate'],0.0,0.0
+Who are the parents of the wife of Juan Carlos I?,['http://dbpedia.org/resource/Juan_Carlos_I_of_Spain'],"['http://dbpedia.org/ontology/spouse', 'http://dbpedia.org/ontology/parent']",['http://dbpedia.org/resource/Juan_Carlos_I_of_Spain'],1.0,1.0,[],0,0.0
+Who is the novelist of the work a song of ice and fire?,[],['http://dbpedia.org/property/author'],[],1,1,[],0,0.0
+In which studio did the Beatles record their first album?,[],[],"['http://dbpedia.org/resource/The_Beatles', 'http://dbpedia.org/resource/First_(Denise_Ho_album)']",1,1,['http://dbpedia.org/ontology/background'],1,1
+Which beer brewing companies are located in North-Rhine Westphalia?,[],[],"['http://dbpedia.org/resource/North_Rhine', 'http://dbpedia.org/resource/Westphalia']",1,1,['http://dbpedia.org/ontology/locatedInArea'],1,1
+When did princess Diana die?,"['http://dbpedia.org/resource/Diana,_Princess_of_Wales']",['http://dbpedia.org/ontology/deathDate'],['http://aksw.org/notInWiki/Diana'],0.0,0.0,['http://dbpedia.org/ontology/leader'],0.0,0.0
+Who founded Intel?,['http://dbpedia.org/resource/Intel'],['http://dbpedia.org/property/founders'],['http://dbpedia.org/resource/Intel'],1.0,1.0,['http://dbpedia.org/ontology/foundationPlace'],0.0,0.0
+Who is the youngest player in the Premier League?,['http://dbpedia.org/resource/Premier_League'],"['http://dbpedia.org/ontology/team', 'http://dbpedia.org/ontology/league', 'http://dbpedia.org/ontology/team', 'http://dbpedia.org/ontology/birthDate']",['http://aksw.org/notInWiki/thePremierLeague'],0.0,0.0,[],0,0.0
+Which instruments does Cat Stevens play?,['http://dbpedia.org/resource/Cat_Stevens'],['http://dbpedia.org/ontology/instrument'],['http://dbpedia.org/resource/Cat_Stevens'],1.0,1.0,['http://dbpedia.org/ontology/starring'],0.0,0.0
+How many rivers and lakes are in South Carolina?,[],[],['http://dbpedia.org/resource/South_Carolina'],1,1,[],1,1
+Who was called Rodzilla?,[],['http://xmlns.com/foaf/0.1/nick'],['http://dbpedia.org/resource/Rodzilla'],1,1,[],0,0.0
+Give me the capitals of all countries in Africa.,[],['ct:subjec'],['http://dbpedia.org/resource/Africa'],1,1,[],0,0.0
+Which bridges are of the same type as the Manhattan Bridge?,[],['http://dbpedia.org/ontology/type'],['http://aksw.org/notInWiki/theManhattanBridge'],1,1,[],0,0.0
+How many companies were founded by the founder of Facebook?,['http://dbpedia.org/resource/Facebook'],"['http://dbpedia.org/ontology/foundedBy', 'http://dbpedia.org/ontology/foundedBy']",['http://dbpedia.org/resource/Facebook'],1.0,1.0,['http://dbpedia.org/ontology/foundationPlace'],0.0,0.0
+Show me hiking trails in the Grand Canyon where there's no danger of flash floods.,"['http://dbpedia.org/resource/Grand_Canyon', 'http://dbpedia.org/resource/Flash_flood']",[],['http://aksw.org/notInWiki/theGrandCanyon'],0.0,0.0,[],1,1
+Which book has the most pages?,[],[],[],1,1,[],1,1
+What is the largest state in the United States?,[],[],['http://aksw.org/notInWiki/theUnitedStates'],1,1,[],1,1
+Give me the websites of companies with more than 500000 employees.,[],['http://dbpedia.org/ontology/numberOfEmployees'],['http://aksw.org/notInWiki/morethan500000'],1,1,[],0,0.0
+What were the names of the three ships by Columbus?,[],[],"['http://dbpedia.org/resource/COLUMBUS', 'http://aksw.org/notInWiki/three']",1,1,[],1,1

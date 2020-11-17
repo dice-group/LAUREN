@@ -1,0 +1,1 @@
+total time for qald8 eval: 284.35815715789795total time for qald9 eval: 665.5456619262695
